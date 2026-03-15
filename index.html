@@ -10,74 +10,103 @@
       font-family:Tahoma, Arial, sans-serif;
       background:#f5f6fa;
       direction:rtl;
+      color:#1f2937;
     }
+
     header{
-      background:#1e272e;
+      background:linear-gradient(135deg,#111827,#374151);
       color:#fff;
-      padding:20px;
+      padding:24px;
       text-align:center;
-      font-size:24px;
+      font-size:28px;
       font-weight:bold;
+      box-shadow:0 2px 12px rgba(0,0,0,0.15);
     }
+
     .container{
-      width:95%;
-      margin:20px auto;
+      width:94%;
+      max-width:1200px;
+      margin:24px auto;
     }
+
     .stats{
-      display:flex;
-      gap:15px;
-      flex-wrap:wrap;
-      margin-bottom:20px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:16px;
+      margin-bottom:22px;
     }
+
     .stat{
-      flex:1;
-      min-width:220px;
       background:#fff;
-      padding:20px;
+      padding:22px;
       text-align:center;
-      border-radius:12px;
-      box-shadow:0 3px 10px rgba(0,0,0,0.08);
+      border-radius:14px;
+      box-shadow:0 3px 12px rgba(0,0,0,0.08);
       font-size:20px;
       font-weight:bold;
     }
+
     .card{
       background:#fff;
-      padding:20px;
+      padding:22px;
       margin-bottom:20px;
-      border-radius:12px;
-      box-shadow:0 3px 10px rgba(0,0,0,0.08);
+      border-radius:14px;
+      box-shadow:0 3px 12px rgba(0,0,0,0.08);
     }
+
     .card h2{
-      margin:0 0 15px;
-      font-size:22px;
-      color:#2f3640;
+      margin:0 0 14px;
+      font-size:24px;
+      color:#111827;
     }
+
     .note{
       background:#fff8e1;
-      color:#6b4f00;
-      padding:12px 15px;
+      color:#7c5a00;
+      padding:14px 16px;
       border-radius:10px;
-      margin-bottom:20px;
+      margin-bottom:18px;
       font-size:15px;
-      line-height:1.8;
+      line-height:1.9;
     }
+
     .buttons{
       display:flex;
       gap:12px;
       flex-wrap:wrap;
+      margin-bottom:14px;
     }
+
     .btn{
       display:inline-block;
-      background:#1e272e;
+      background:#111827;
       color:#fff;
       text-decoration:none;
-      padding:12px 18px;
+      padding:13px 20px;
       border-radius:10px;
       font-size:16px;
       font-weight:bold;
+      transition:0.2s ease;
     }
+
     .btn:hover{
-      opacity:0.9;
+      background:#374151;
+      transform:translateY(-1px);
+    }
+
+    .section-title{
+      font-size:18px;
+      font-weight:bold;
+      margin:10px 0 14px;
+      color:#374151;
+    }
+
+    .footer{
+      text-align:center;
+      color:#6b7280;
+      font-size:14px;
+      margin-top:18px;
+      padding-bottom:20px;
     }
   </style>
 </head>
@@ -97,14 +126,20 @@
       <h2>قاعدة البيانات العقارية</h2>
 
       <div class="note">
-        اضغط على القسم الذي تريد فتحه مباشرة.
+        اختر القسم الذي تريد فتحه مباشرة من الأزرار التالية.
       </div>
+
+      <div class="section-title">الوصول السريع</div>
 
       <div class="buttons">
         <a class="btn" target="_blank" href="https://docs.google.com/spreadsheets/d/17PjsCjDlWEdbuaYcB4EqOR-Eiw05Ng7DTrY6cyDd_l0/edit#gid=133223794">فتح المشاريع</a>
         <a class="btn" target="_blank" href="https://docs.google.com/spreadsheets/d/17PjsCjDlWEdbuaYcB4EqOR-Eiw05Ng7DTrY6cyDd_l0/edit#gid=1551169871">فتح العملاء</a>
         <a class="btn" target="_blank" href="https://docs.google.com/spreadsheets/d/17PjsCjDlWEdbuaYcB4EqOR-Eiw05Ng7DTrY6cyDd_l0/edit">فتح ملف Google Sheets</a>
       </div>
+    </div>
+
+    <div class="footer">
+      لوحة تحكم عقارية مرتبطة بنظام واتساب + n8n + Google Sheets
     </div>
 
   </div>
