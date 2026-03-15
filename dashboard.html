@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لوحة التحكم العقارية</title>
+  <style>
+    body{
+      margin:0;
+      font-family:Tahoma, Arial, sans-serif;
+      background:#f5f6fa;
+      direction:rtl;
+    }
+
+    header{
+      background:#1e272e;
+      color:#fff;
+      padding:20px;
+      text-align:center;
+      font-size:24px;
+      font-weight:bold;
+    }
+
+    .container{
+      width:95%;
+      margin:20px auto;
+    }
+
+    .stats{
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
+      margin-bottom:20px;
+    }
+
+    .stat{
+      flex:1;
+      min-width:220px;
+      background:#fff;
+      padding:20px;
+      text-align:center;
+      border-radius:12px;
+      box-shadow:0 3px 10px rgba(0,0,0,0.08);
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    .card{
+      background:#fff;
+      padding:15px;
+      margin-bottom:20px;
+      border-radius:12px;
+      box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .card h2{
+      margin:0 0 15px;
+      font-size:22px;
+      color:#2f3640;
+    }
+
+    iframe{
+      width:100%;
+      height:700px;
+      border:none;
+      border-radius:10px;
+      background:#fff;
+    }
+
+    .note{
+      background:#fff8e1;
+      color:#6b4f00;
+      padding:12px 15px;
+      border-radius:10px;
+      margin-bottom:20px;
+      font-size:15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>لوحة إدارة العقار</header>
+
+  <div class="container">
+
+    <div class="stats">
+      <div class="stat">📊 المشاريع</div>
+      <div class="stat">👥 العملاء</div>
+      <div class="stat">📈 الطلبات</div>
+    </div>
+
+    <div class="note">
+      داخل الجدول ستجد تبويبات الشيت مثل: المشاريع / العملاء / الطلبات.
+    </div>
+
+    <div class="card">
+      <h2>قاعدة البيانات العقارية</h2>
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTrA7OhTv4nkOkc4uskBUmzw3fU9hPaFoJ5PVr0xW9KjcPuHDOC4zDwOf7rPcuLCSpTQE53De1xjPOk/pubhtml?widget=true&headers=false"></iframe>
+    </div>
+
+  </div>
+
+</body>
+</html>
